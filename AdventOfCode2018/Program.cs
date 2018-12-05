@@ -21,8 +21,11 @@ namespace AdventOfCode2018
             //Console.WriteLine($"{nameof(Day1.SolveB)} is {day1SolveB} in {stopwatch.ElapsedMilliseconds} msec");
 
             var day2 = new Day2();
-            var day2SolveA = day2.SolveA();
-            Console.WriteLine($"{nameof(Day2.SolveA)} is {day2SolveA} in {stopwatch.ElapsedMilliseconds} msec");
+            //var day2SolveA = day2.SolveA();
+            //Console.WriteLine($"{nameof(Day2.SolveA)} is {day2SolveA} in {stopwatch.ElapsedMilliseconds} msec");
+
+            var day2SolveB = day2.SolveB();
+            Console.WriteLine($"{nameof(Day2.SolveB)} is {day2SolveB} in {stopwatch.ElapsedMilliseconds} msec");
 
             Console.ReadLine();
         }
