@@ -22,9 +22,9 @@
             var overlappingSquare = 0;
             foreach (var claim in splittedInput)
             {
-                for (int x = 0; x < claim.Width; x++)
+                for (var x = 0; x < claim.Width; x++)
                 {
-                    for (int y = 0; y < claim.Height; y++)
+                    for (var y = 0; y < claim.Height; y++)
                     {
                         if (_grid[claim.X + x, claim.Y + y] == null) { _grid[claim.X + x, claim.Y + y] = new List<int>(); }
 
