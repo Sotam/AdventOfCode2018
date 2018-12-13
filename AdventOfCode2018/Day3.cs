@@ -4,11 +4,11 @@
     using System.Linq;
     using System.Text.RegularExpressions;
 
-    public class Day3
+    public class Day3 : BaseDay
     {
         private List<int>[,] _grid;
 
-        public int SolveA()
+        public override string SolveA()
         {
             var splittedInput = Helper.SplitInput(Input)
                 .Select(x => new Claim(x))
@@ -41,10 +41,10 @@
                 }
             }
 
-            return overlappingSquare;
+            return $"{overlappingSquare}";
         }
 
-        public string SolveB()
+        public override string SolveB()
         {
             // This generates a list with overlapping Ids
             // and the grid

@@ -6,9 +6,9 @@ namespace AdventOfCode2018
     using System.Linq;
     using System.Text.RegularExpressions;
 
-    public class Day4
+    public class Day4 : BaseDay
     {
-        public string SolveA()
+        public override string SolveA()
         {
             var guards = GenerateLogbook();
 
@@ -18,7 +18,7 @@ namespace AdventOfCode2018
             return $"Guard {guardAsleep.Key} sleeps most at minute {minuteAsleep}, {guardAsleep.Key * minuteAsleep}";
         }
 
-        public string SolveB()
+        public override string SolveB()
         {
             var guards = GenerateLogbook();
 

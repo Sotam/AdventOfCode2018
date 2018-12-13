@@ -2,9 +2,9 @@
 {
     using System.Linq;
 
-    internal class Day2
+    public class Day2 : BaseDay
     {
-        public int SolveA()
+        public override string SolveA()
         {
             var splittedInput = Helper.SplitInput(Input);
 
@@ -25,10 +25,10 @@
                 }
             }
 
-            return found2Times * found3Times;
+            return $"{found2Times * found3Times}";
         }
 
-        public string SolveB()
+        public override string SolveB()
         {
             var spittedInput = Helper.SplitInput(Input);
 

@@ -2,9 +2,9 @@
 {
     using System.Collections.Generic;
 
-    public class Day1
+    public class Day1 : BaseDay
     {
-        public int SolveA()
+        public override string SolveA()
         {
             var splittedInput = Helper.SplitInput(Input);
 
@@ -23,10 +23,10 @@
                 }
             }
 
-            return total;
+            return $"{total}";
         }
 
-        public int SolveB()
+        public override string SolveB()
         {
             var splittedInput = Helper.SplitInput(Input);
 
@@ -49,7 +49,7 @@
 
                     if (foundFrequencies.Contains(total))
                     {
-                        return total;
+                        return $"{total}";
                     }
 
                     foundFrequencies.Add(total);
